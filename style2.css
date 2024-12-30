@@ -1,0 +1,300 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px) brightness(0.7);
+    z-index: -1;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    font-family: 'Merriweather', serif;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.header .tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+/* Form Section */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    color: #3b3a42;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button {
+    background-color: #5b5a68;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #4a4952;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    border-radius: 10px;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: #000; /* Black header and footer background */
+    color: #fff;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-style: italic;
+    color: #ccc; /* Subtle gray for tagline text */
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.section h2 {
+    color: #000; /* Black section headers */
+    margin-bottom: 20px;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.flex-container .section {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button {
+    background: #000; /* Black buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333; /* Slightly lighter black on hover */
+}
+
+.info-message {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #000; /* Black info messages */
+}
+
+/* Virtual Tour Section */
+.virtual-tour {
+    text-align: center;
+    margin-top: 20px; /* Adjusted spacing */
+}
+
+.virtual-tour h2 {
+    font-size: 1.2em; /* Smaller heading */
+    color: #333;
+    margin-bottom: 10px; /* Reduced margin below the title */
+}
+
+.virtual-tour .button {
+    font-size: 0.9em; /* Smaller button text */
+    padding: 8px 16px; /* Compact button padding */
+    background: #444; /* Darker button color for contrast */
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.virtual-tour .button:hover {
+    background-color: #222; /* Darker on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer */
+.footer {
+    background: #000; /* Black footer */
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+#working-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove bullet points */
+    gap: 5px; /* Reduced spacing between items */
+}
+
+#working-hours li {
+    font-size: 0.9em; /* Smaller font size */
+    color: #444; /* Dark gray text */
+    font-weight: 500;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    position: relative;
+    padding: 3px 6px; /* Compact padding */
+    display: inline-block;
+    border-bottom: 1px solid #ccc; /* Subtle underline */
+    transition: all 0.2s ease;
+}
+
+#working-hours li:hover {
+    color: #222; /* Slightly darker text on hover */
+    border-bottom-color: #222; /* Darker underline on hover */
+    transform: scale(1.02); /* Minimal zoom effect */
+}
+
+/* Add icons to the list items */
+#working-hours li::before {
+    content: '\f017'; /* Font Awesome clock icon */
+    font-family: "Font Awesome 5 Free"; /* Ensure Font Awesome is loaded */
+    font-weight: 900;
+    margin-right: 6px; /* Reduced spacing between icon and text */
+    color: #666; /* Slightly darker gray for icon */
+    font-size: 0.8em; /* Smaller icon size */
+}
